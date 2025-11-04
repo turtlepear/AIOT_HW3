@@ -20,10 +20,10 @@
 
 ```bash
 python preprocessing.py --input_csv sms_spam_no_header.csv --output_csv sms_spam_clean.csv
+```
 
 
-
-# 2️⃣ 訓練與推論（Train & Predict）
+# 2️ 訓練與推論（Train & Predict）
 
 本階段使用清理後的簡訊資料集，透過 TF-IDF 向量化與邏輯迴歸（Logistic Regression）進行訓練與預測。
 
@@ -42,6 +42,7 @@ python preprocessing.py --input_csv sms_spam_no_header.csv --output_csv sms_spam
 
 ```bash
 python train_predict.py --clean_csv sms_spam_clean.csv --model_dir model_artifacts
+```
 
 
 
@@ -106,7 +107,7 @@ plt.show()
 prec, rec, _ = precision_recall_curve(y_test, y_prob)
 PrecisionRecallDisplay(precision=prec, recall=rec).plot()
 plt.show()
-
+```
 
 
 # 4️⃣ 部署（Streamlit 應用）
@@ -162,7 +163,7 @@ plt.show()
 ```bash
 # 啟動 Streamlit 應用
 streamlit run app.py
-
+```
 
 
 # 5️⃣ 報告與 OpenSpec 流程說明
