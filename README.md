@@ -47,7 +47,7 @@ python train_predict.py --clean_csv sms_spam_clean.csv --model_dir model_artifac
 
 
 
-# 3️⃣ 實驗筆記本與視覺化
+# 3️⃣ 實驗筆記本與視覺化(可去HW3.inpyb看結果)
 
 本階段主要使用 Jupyter Notebook 與 Streamlit 進行資料探索、特徵分析、模型表現觀察及交互式視覺化。
 
